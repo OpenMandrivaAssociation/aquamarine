@@ -42,9 +42,9 @@ Provides:  aquamarine
 This package contains the shared library files.
 
 %package -n %{devname}
-Summary:        Development files for %{name}
-Requires:       Requires:	%{libname} = %{EVRD}
-Provides:  aquamarine-devel
+Summary:  Development files for %{name}
+Requires: %{libname} = %{EVRD}
+Provides: aquamarine-devel
 
 %description -n %{devname}
 Development files for %{name}.
