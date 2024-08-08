@@ -8,6 +8,7 @@ Source0:        https://github.com/hyprwm/aquamarine/archive/v%{version}/%{name}
 
 BuildRequires:  cmake
 BuildRequires:  egl-devel
+BuildRequires:  pkgconfig(opengl)
 BuildRequires:  pkgconfig(gbm)
 BuildRequires:  pkgconfig(hwdata)
 BuildRequires:  pkgconfig(hyprutils)
