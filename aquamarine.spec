@@ -5,7 +5,7 @@
 
 Name:           aquamarine
 Version:        0.4.5
-Release:        1
+Release:        2
 Summary:        A very light linux rendering backend library
 License:        BSD-3-Clause
 Group:          Hyprland
@@ -53,6 +53,8 @@ Development files for %{name}.
 %autosetup -p1
 
 %build
+export CC=gcc
+export CXX=g++
 %cmake
 %make_build
 
