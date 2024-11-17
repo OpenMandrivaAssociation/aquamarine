@@ -1,13 +1,11 @@
 %define libname %mklibname aquamarine
 %define devname %mklibname -d aquamarine
 
-%define _disable_lto 1
-
 %define api 3
 
 Name:           aquamarine
-Version:        0.4.5
-Release:        2
+Version:        0.5.0
+Release:        1
 Summary:        A very light linux rendering backend library
 License:        BSD-3-Clause
 Group:          Hyprland
@@ -55,6 +53,9 @@ Development files for %{name}.
 %autosetup -p1
 
 %build
+# Hyprland crashing at launch if compiled with Clang 19
+export CC=gcc
+export CXX=g++
 %cmake
 %make_build
 
