@@ -1,7 +1,7 @@
 %define libname %mklibname aquamarine
 %define devname %mklibname -d aquamarine
 
-%define api 4
+%define api 6
 
 Name:           aquamarine
 Version:        0.7.0
