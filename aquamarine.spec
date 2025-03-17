@@ -1,11 +1,11 @@
 %define libname %mklibname aquamarine
 %define devname %mklibname -d aquamarine
 
-%define api 6
+%define api 7
 
 Name:           aquamarine
-Version:        0.7.2
-Release:        2
+Version:        0.8.0
+Release:        1
 Summary:        A very light linux rendering backend library
 License:        BSD-3-Clause
 Group:          Hyprland
