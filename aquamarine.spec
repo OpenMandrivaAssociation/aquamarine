@@ -5,7 +5,7 @@
 
 Name:           aquamarine
 Version:        0.8.0
-Release:        1
+Release:        2
 Summary:        A very light linux rendering backend library
 License:        BSD-3-Clause
 Group:          Hyprland
@@ -13,6 +13,7 @@ URL:            https://github.com/hyprwm/aquamarine
 Source0:        https://github.com/hyprwm/aquamarine/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
+BuildRequires:  mold
 BuildRequires:  egl-devel
 BuildRequires:  pkgconfig(opengl)
 BuildRequires:  pkgconfig(gbm)
@@ -53,6 +54,8 @@ Development files for %{name}.
 %autosetup -p1
 
 %build
+# Try use mold if compiled with GCC
+%global optflags %{optflags} -fuse-ld=mold
 # Hyprland crashing at launch if compiled with Clang 19
 export CC=gcc
 export CXX=g++
