@@ -4,7 +4,7 @@
 %define api 8
 
 Name:           aquamarine
-Version:        0.9.1
+Version:        0.9.2
 Release:        1
 Summary:        A very light linux rendering backend library
 License:        BSD-3-Clause
