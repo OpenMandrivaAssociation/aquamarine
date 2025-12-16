@@ -13,6 +13,7 @@ URL:            https://github.com/hyprwm/aquamarine
 Source0:        https://github.com/hyprwm/aquamarine/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
+BuildRequires:  make
 BuildRequires:  mold
 BuildRequires:  egl-devel
 BuildRequires:  pkgconfig(opengl)
