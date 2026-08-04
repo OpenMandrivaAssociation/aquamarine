@@ -1,7 +1,7 @@
 %define libname %mklibname aquamarine
 %define devname %mklibname -d aquamarine
 
-%define api 11
+%define api 13
 
 Name:           aquamarine
 Version:        0.14.0
@@ -16,6 +16,7 @@ BuildRequires:  cmake
 BuildRequires:  make
 BuildRequires:  mold
 BuildRequires:  egl-devel
+BuildRequires:  atomic-devel
 BuildRequires:  pkgconfig(opengl)
 BuildRequires:  pkgconfig(gbm)
 BuildRequires:  pkgconfig(hwdata)
